@@ -1,0 +1,428 @@
+*{
+   /* background-color: white(137, 139, 133); */
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+
+/* h1{
+   color: yellow;
+   font-family: 'Courier New', Courier, monospace;
+   font-size: 50px;
+   text-align: center;
+   text-shadow: 2px 2px 4px #000000;
+   text-transform: capitalize;
+   text-decoration: underline;
+   font-weight: bold;
+   line-height: 1.5;
+   letter-spacing: 2px;
+} */
+
+h2{
+      color:blueviolet;
+      padding: 0 10px 5px 10px;
+
+}
+
+/* p{
+     color: green;
+     background-image: url(./assets/download.jpg);
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center;
+} */
+
+.box > h1{
+      color: red;
+}
+
+#id-selectors > h2{
+      color: hotpink;
+}
+
+.language-section1 > h1,
+.language-section1 > h2,
+.language-section1 > h3,
+.language-section1 > h4,
+.language-section1 > h5,
+.language-section1 > h6,
+.language-section1 > p {
+   color: purple;
+}
+
+.Container{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    padding-left: 50px;
+    /* padding-top: 70px;
+    padding: 20px 40px 60px 80px; */
+    /* border-top: 10px solid green;
+    border-bottom: 20px solid blue; */
+    border: 20px solid black;
+    border-radius: 50px;
+    /* margin-left: 100px;
+    margin-top: 150px;
+    margin: 100px 120px 140px 160px;
+
+*/
+
+}
+
+      .greenbox{
+    width: 300px;
+    height: 300px;
+    background-color: blue;
+    /* position: sticky;
+    top:0;
+    margin-top: 100px; */
+}
+
+.purplebox{
+    width: 100px;
+    height: 100px;
+    background-color: purple;
+   position: relative;
+   left: 300px;
+   top: 200px;
+   position: fixed;
+   top: 50px;
+   position: absolute;
+}
+
+.display{
+   display: block;
+}
+
+h2{
+   display: inline-block;
+   background-color: orange;
+   height: 200px;
+   width: 200px;
+}
+
+   .css1, .css6{
+      display: block;
+      background-color: yellow;
+      height: 100px;
+      width: 200px;
+      flex:1;
+      order: 3;
+   }
+     
+   .css2, .css7{
+      display: block;
+      background-color: red;
+      height: 100px;
+      width: 200px;
+      flex:1;
+      order:1;
+
+   }
+      
+   .css3, .css8{
+      display: block;
+      background-color: blue;
+      height: 100px;
+      width: 200px;
+      flex:1;
+      order: 2;
+
+   }
+     
+   .css4, .css9{
+
+      display: block;
+      background-color: purple;
+      height: 100px;
+      width: 200px;
+   }
+
+   .css5, .css10{
+      display: block;
+      background-color: pink;
+      height: 100px;
+      width: 200px;
+ }
+
+.container{
+   display:flex;
+   flex-direction: row;
+   justify-content: start;
+   /* height: 500px;
+   border: 3px black solid; */
+   align-items: start;
+   /* gap: 20px;
+   flex-wrap: wrap;
+   align-content: space-between; */
+}
+
+.paragraph{
+   background-color:brown;
+   color: white;
+   padding: 5px;
+
+}
+
+.grid-container{
+   display: grid;
+   grid-template-rows: repeat(3, 100px);
+
+}
+
+.innerbox{
+   background-color: rgb(7, 119, 33);
+   font-size: 50px;
+   display: grid;
+   /* justify-content: center;
+   align-items: center; */
+}
+
+.outerbox{
+   margin-top: 20px;
+   display: grid;
+   grid-template-columns: repeat(5, 1fr);
+   gap: 10px;
+}
+
+.innerbox1{
+   /* grid-column-start: 1;
+   grid-column-end: 3; */
+   grid-column: span;
+
+}
+
+.innerbox2{
+   grid-row: span 2;
+   
+}
+
+.layout > div{
+   border: 1px solid black;
+   font-size: 50px;
+   display: grid;
+   justify-content: center;
+   align-items: center;
+   background-color: salmon;
+   font-weight: bold;
+
+}
+
+.layout{
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   grid-template-rows: 10vh 70vh 10vh;
+   grid-template-areas:
+   "header header header"
+   "box1 box2 box3"
+   "footer footer footer";
+}
+
+.header{
+   grid-area: header;
+}
+
+.box1{
+   grid-area: box1;
+}
+
+.box2{
+   grid-area: box2;
+}
+
+.box3{
+   grid-area: box3;
+}
+
+.footer{
+   grid-area: footer;
+}
+
+body{
+   display: flex ;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+
+}
+
+.ball{
+   width: 80px;
+   height: 80px;
+   background: red;
+   border-radius: 50%;
+   animation: bounce 10s infinite alternate;
+
+}
+
+@keyframes bounce {
+   25% {
+      width: 200px;
+      height: 200px;
+      background-color: aqua;
+   }
+   50% {
+      width: 300px;
+      height: 300px;
+      background-color: blue;
+   }
+
+   75%{
+      width: 400px;
+      height: 400px;
+      background-color: green;
+   }
+   100%{
+      width: 500px;
+      height: 500px;
+      background-color: yellowgreen;
+   }
+}
+
+.loader{
+   width: 50px;
+   height: 50px;
+   border: 5px solid #ddd;
+   border-top: 5px solid blue;
+   border-radius: 50%;
+   animation: spin 1s linear infinite;
+   margin: 100px;
+
+}
+
+@keyframes spin {
+   from{
+      transform: rotate(0deg);
+   }
+   to{
+      transform: rotate(360deg);
+   }
+} 
+
+.button{
+   background-color: blueviolet;
+   color: white;
+   padding: 10px 20px;
+   
+}
+
+.button:hover{
+   background-color: aqua;
+   cursor: pointer;
+}
+
+input:focus{
+   border: 2px solid blue;
+   outline: none;
+
+}
+
+/* li:nth-child(odd){
+   color: red;
+   font-size: 50px;
+   font-weight: 500;
+}
+
+li:nth-child(even){
+   color: green;
+   font-size: 70px;
+   font-weight: 100;
+} */
+
+/* li:first-child{
+   color: red
+}
+
+li:last-child{
+   color: greenyellow;
+} */
+
+
+p::first-letter{
+   font-size: 20px;
+   color: blue;
+}
+
+p::first-line{
+   font-size: 20px;
+   color: aqua;
+}
+
+p::before{
+   content: "hii yatheesh ";
+}
+
+p::after{
+   content:"  bye yatheesh ";
+}
+
+#check:checked + label{
+   color: green;
+} 
+
+header{
+   display: flex;
+   margin-left: top;
+   justify-content: space-between;
+   align-items: center;
+   padding: 25px 50px;
+   background-color: brown;
+   color: white;
+}
+
+h1{
+   font-size: 100px;
+   font-weight: bold;
+}
+
+nav > ul{
+   list-style: none;
+}
+
+nav > ul > li > a{
+   color: white;
+   text-decoration: none;
+   font-size: 20px;
+}
+
+a:hover{
+   color: red;
+}
+
+svg{
+   width: 50px;
+   height: 50px;
+   fill: white;
+   display: none;
+}
+
+@media screen and (max-width: 500px){
+   nav{
+      display: none;
+   }
+}
+
+body{
+   font-family: Arial, Helvetica, sans-serif;
+   text-align: center;
+   background-color: rgb(123, 124, 121);
+   margin: 0;
+}
+
+header{
+   background-color: brown;
+   color: white;
+   padding: 20px;
+}
+
+p{
+   font-size: 20px;
+}
+
+button{
+   background-color: green;
+   color: white;
+   border: none;
+   padding: 10px 20px;
+   cursor: pointer;
+}

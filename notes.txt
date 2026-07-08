@@ -1,0 +1,192 @@
+HTML5 - Hyper Text Markup Language (<head> content </head>)
+
+Self closing tags - hr, br, meta, img, input,
+
+===> It is Used to create a webpage
+===> It is NOT a Programming Language
+===> It is Markup Language
+===> Every website can start with HTML5
+
+1) Heading - h1 to h6
+
+2) Paragraph - p
+
+3) Hr
+
+4) Break tag - br
+
+5) Text Formatting - b or strong, i, u, sup, sub and mark
+
+6) Anchor Tag (Linking) - a
+
+7) Image Tag - img
+
+8) List - Ordered list and Unordered list
+
+9) Tables - tr, th, td
+
+10) Forms - input, label, placeholder, required, button, type(important), fieldset and legend
+
+11) Media Elements - video and audio
+
+12) Semantic tags - Header, footer, section, nav and main
+
+13) Div and Span
+
+
+-----------------------------------------------------------------------
+
+CSS - Cascading Style Sheet
+==> It is used to style and design a web page
+==> CSS Works together with HTML5
+==> Change the text, Color, Background
+==> To set the image and design a layout
+==> Adding A animation and Transition too
+
+1) Types of CSS
+i) Inline CSS
+ii) Internal CSS
+iii) External CSS
+Inline > Internal > External
+
+2) CSS Syntax
+ selector{
+    property: value;
+ }
+
+3) Types of Selector
+i) Elements Selector - (h1) (h2) (p)
+ii) Class Selector - (.) - Multiple - No of times we can use the same class name 
+iii) Id Selector - (#) - Unique - Only one time we can use the same id name
+iv) Universal Selector - (*) - Give some style it will apply to the entire site
+v) Group Selector - Class or id name contains different tags, in that different tags we want to Change same style means we can go with Group selector
+
+4) Colors and Background
+===> Color - Name, RGB, HEX
+===> Background - background-image: url(./Assets/images\ \(1\).jpg);
+                  background-repeat: no-repeat;
+                  background-size: cover;
+                  background-position: center;      
+
+5) Text Styling
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 70px;
+    text-align: center;
+    text-transform: capitalize;
+    text-decoration: line-through;
+    font-weight: bold;
+    line-height: 100px;
+    letter-spacing: 20px;
+
+ 6) Box Modeling
+ i) content
+ ii) Padding - Around the content is called Padding
+ iii) Border - Around the Padding is called Border
+ iv) Margin - Around the border is called Margin 
+   
+ 7) Position
+ i) Static (default)
+ ii) Relative - using position:relative; to set the limit like (left, top, right, bottom)
+ iii) Absolute - Absolute can search the non-Static parent, once reach the non-static parent it will act as a same relative, otherwise it will search one more one more..... there is no non-static parent means it will directly go to the root(body) of the website/webpage
+ iv) Fixed - to be fixed to the place
+ v) Sticky - using top:0 once reach the top:0 it will act as a same fixed
+
+ 
+ 8) Display - Block(default), inline, inline-block, flexbox, grid, none
+
+          flex                          grid
+    One dimensional layout      Two dimensional layout        
+    Row OR Column            Row and Column   
+    Best for Small componentes      Best for full page layout
+    ex; Navvar, cards                 ex: section, dashbord
+
+=======> flexbox
+i) Using Display: flex; (column into row)    
+ii) Flex direction - row, row-reverse, column, column-reverse
+iii) Justify-content (X) - start, end, center, space-around, space-evenly, space-between
+iv) align-items (Y) (Set the height) - start, center, end
+v) Gap - to be set the value (px, rem, %, cm, m, vw, vh)
+vi) flex-wrap - nowrap, wrap, wrap-reverse
+vii) align-content (Y) (Set the height) (Flex-wrap is enable)- start, end, center, space-around, space-evenly, space-between
+viii) flex on item - flex,1,2,3
+ix) Order - Change the visual order of the property
+
+=======> grid
+i) Using Display: Grid; (No Change)
+ii) grid-template-columns: 200px 300px 400px;
+                         : 30% 30% 30%;
+                         : 1fr 1fr 1fr;
+                         : 300px 30% 1fr;
+                         : repeat(3,200px);
+                         : minmax(200px,1fr) 1fr 1fr;
+                         : repeat(3,minmax(200px,1fr));
+iii) Grid-template-rows:  : 200px 300px 400px;
+                         : 30% 30% 30%;
+                         : 1fr 1fr 1fr;
+                         : 300px 30% 1fr;
+                         : repeat(3,200px);   
+iv) grid-column-start: 1;
+    grid-column-end: 4; 
+    grid-column: 1/4; (starting value/ending value)  
+    grid-column: span 3;
+
+v)  grid-row-start: 1;
+    grid-row-end: 4; 
+    grid-row: 1/4; (starting value/ending value)  
+    grid-row: span 3;      
+
+vi) grid-template-areas: 
+    "z z z z"
+    "sb1 m m sb2"
+    "q q q q";
+    grid-areas :
+     z,sb1,m,sb2,q
+     
+         
+
+9) Transition and animation
+Transition - Whenever we can hover(Affect), some action will do its called Transition
+
+animation - Whenever the website/webpage will reload or refresh some action will do its called animation
+
+=====> Transition
+    transition-duration: 5s;
+    transition-property: all;
+    transition-timing-function: ease-in;
+                              : ease-out;
+                              : ease-in-out;
+                              : linear;
+
+  -----> Transform (Both X annd Y Axies)
+           ~~~> rotateX(45deg)
+           ~~~> Scale(2)   
+           ~~~> Translate   
+
+======> animation        
+---> Set the animation name
+---> Set the duration
+---> We can use the @keyframes to set the name and using two types to animatting, one is (From To) and another one is (25%, 50%, 75%, 100%)  
+
+10) Pseudo Elements
+i) hover 
+ii) Focus
+iii) nth-child(2) (Odd) (Even)
+iv) first-child 
+v) last-child
+vi) First-letter
+vii) First-line
+viii) Before
+ix) After
+x) Checked
+
+11) Media Queries OR Responsive design
+===> Apply Styles based on the Device Conditions
+===> Device type (Mobile, tablet, Desktop)
+
+---> mobile - 320px to 600px
+---> tablet - 601px to 800px
+---> Lap/Desktop - Above 801px
+
+@media screen and (max-width:size) {
+    block of code
+}
